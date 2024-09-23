@@ -50,6 +50,8 @@
     
 // })
 
+
+
 jusTry('quota-input-btn','quota-input','quota-collection','main-balance');
 jusTry('input-btn','input-amount','noakhali-collection','main-balance');
 jusTry('feni-input-btn','feni-input','feni-collection','main-balance');
