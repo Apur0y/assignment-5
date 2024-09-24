@@ -44,7 +44,7 @@ function jusTry(buttonId,amount,collection,avaiableTk,sector){
 
          div.innerHTML =` 
                        <div class=" border-teal-700 rounded-lg bg-teal-400 p-7 m-6  flex justify-center flex-col">
-                            <h1 class="mx-auto text-2xl font-semibold">${donateTk} Taka is Donated for ${sector}, Bangladesh. </h1>
+                            <h1 class="mx-auto text-lg md:text-2xl font-semibold">${donateTk} Taka is Donated for ${sector}, Bangladesh. </h1>
                             <p class="mx-auto">${new Date().toString()} </p> 
                        </div>
                         `

@@ -18,29 +18,29 @@
 </style>
 <body class="lexend relative">
     
-    <header class="sticky top-0 z-50 bg-orange-100 shadow-md" >
+    <header class="sticky top-0 z-50 bg-orange-100 backdrop-blur-md bg-opacity-50 shadow-md" >
 
-        <div class="navbar mx-auto px-24 pt-4">
+        <div class="navbar mx-auto md:px-24 pt-4 mb-3">
             <div class="navbar-start">
             <button onclick="window.location.href='blog.html'" id="blog-btn" class="bg-lime-300 py-2 px-4 font-semibold rounded-lg">Blog</button>
             </div>
 
             <div class="navbar-center">
-                <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/logo.png" alt="">
-              <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+                <img class="hidden md:flex" src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/logo.png" alt="">
+              <a class="btn  btn-ghost text-base mr-8 md:text-xl">Donate Bangladesh</a>
             </div>
 
 
             <div class="navbar-end ">
               <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-               <p id="main-balance" class="font-medium text-zinc-500 mx-2">50000</p>
+               <p id="main-balance" class="font-medium text-zinc-500 mx-2">100000</p>
                <p class="font-medium text-zinc-500">BDT</p>
             </div>
           </div>
        
     </header>
 
-    <div class="flex flex-row justify-center gap-14 sticky top-16 z-50 bg-base-100   py-4">
+    <div class="flex flex-row justify-center gap-14 sticky top-16 z-50 bg-white-100 backdrop-blur-md bg-opacity-50  py-4">
       <button id="donation-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">Donation</button>
       <button id="history-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">History</button>
 
@@ -66,15 +66,15 @@
 </dialog>               
       
 
-        <div class="mx-32">
-            <div class="card card-side bg-base-100 shadow-xl">
-                <figure class="">
+        <div class="md:mx-32">
+            <div class="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row">
+                <figure>
                   <img class="p-8"
                     src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/noakhali.png"
                     alt="Movie" />
                 </figure>
-                <div class="card-body w-1/2">
-                    <div class="flex flex-row w-1/5 bg-zinc-300 rounded-lg p-1">
+                <div class="card-body md:w-1/2">
+                    <div class="flex flex-row w-fit bg-slate-200 bg rounded-lg p-1">
                         <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" class="" alt="">
                          <span id="noakhali-collection" class="font-medium text-zinc-500 mx-2 pt-1">0</span>
                          <span class="font-medium text-zinc-500 pt-1">BDT</span>
@@ -96,15 +96,15 @@
         </div>
 
 
-        <div class="mx-32">
-            <div class="card card-side bg-base-100 shadow-xl">
+        <div class="md:mx-32">
+            <div class="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row">
                 <figure class="">
                   <img class="p-8"
                     src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/feni.png"
                     alt="Movie" />
                 </figure>
-                <div class="card-body w-1/2">
-                    <div class="flex flex-row w-1/5 bg-zinc-300 rounded-lg p-1">
+                <div class="card-body md:w-1/2">
+                    <div class="flex flex-row w-fit bg-slate-200 rounded-lg p-1">
                         <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" class="" alt="">
                          <span id="feni-collection" class="font-medium text-zinc-500 mx-2 pt-1">0</span>
                          <span class="font-medium text-zinc-500 pt-1">BDT</span>
@@ -127,15 +127,15 @@
 
 
 
-        <div class="mx-32">
-            <div class="card card-side bg-base-100 shadow-xl">
+        <div class="md:mx-32">
+            <div class="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row">
                 <figure class="">
                   <img class="p-8"
                     src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/quota-protest.png"
                     alt="Movie" />
                 </figure>
-                <div class="card-body w-1/2">
-                    <div class="flex flex-row w-1/5 bg-zinc-300 rounded-lg p-1">
+                <div class="card-body md:w-1/2">
+                    <div class="flex flex-row w-fit bg-slate-200  rounded-lg p-1">
                         <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" class="" alt="">
                          <span id="quota-collection" class="font-medium text-zinc-500 mx-2 pt-1">0</span>
                          <span class="font-medium text-zinc-500 pt-1">BDT</span>
@@ -162,7 +162,7 @@
 
     <div id="history-inbox" class="hidden">
 
-      <h1 class="font-extrabold text-4xl flex justify-center">Your Donation History</h1>
+      <h1 class="font-extrabold text-2xl md:text-4xl flex justify-center">Your Donation History </h1>
 
     
 
