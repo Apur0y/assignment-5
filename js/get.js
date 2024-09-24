@@ -1,5 +1,8 @@
 function getInputFieldValueId(id){
     const inputValue = document.getElementById(id).value;
+    if(isNaN(inputValue)){
+        return "Invail input"
+    }
     const inputNumber = parseFloat(inputValue)
     return inputNumber;
 }
@@ -8,6 +11,9 @@ function getInputFieldValueId(id){
 
 function getTextFieldValueId(id){
     const textValue = document.getElementById(id).innerText;
+    if(isNaN(textValue)){
+        return "Invail input"
+    }
     const textNumber = parseFloat(textValue);
     return textNumber;
 }
@@ -29,16 +35,19 @@ function jusTry(buttonId,amount,collection,avaiableTk,sector){
 
         }
 
-        if(isNaN(donateTk) || donateTk<0){
+        if(isNaN(donateTk) || donateTk<0 ){
             alert('Invalid input')
             return;
         }
 
         const div = document.createElement('div')
-div.classList.add('bg-yellow-300')
-div.innerHTML =` 
-         <h1 class="p-7 border-gray-100 rounded-lg">${donateTk} Taka is Donated for ${sector}, Bangladesh. </h1>
-`
+
+         div.innerHTML =` 
+                       <div class=" border-teal-700 rounded-lg bg-teal-400 p-7 m-6  flex justify-center flex-col">
+                            <h1 class="mx-auto text-2xl font-semibold">${donateTk} Taka is Donated for ${sector}, Bangladesh. </h1>
+                            <p class="mx-auto">${new Date().toString()} </p> 
+                       </div>
+                        `
 document.getElementById('history-inbox').appendChild(div)
 
         const newBalance= mainBalance- donateTk;
