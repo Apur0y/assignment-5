@@ -16,11 +16,11 @@
         font-family: "Lexend", sans-serif;
     }
 </style>
-<body class="lexend">
+<body class="lexend relative">
     
-    <header >
+    <header class="sticky top-0 z-50 bg-base-100 shadow-md " >
 
-        <div class="navbar bg-base-100 mx-auto px-24 pt-4">
+        <div class="navbar mx-auto px-24 pt-4">
             <div class="navbar-start">
             <button class="bg-lime-300 py-2 px-4 font-semibold rounded-lg">Blog</button>
             </div>
@@ -33,7 +33,7 @@
 
             <div class="navbar-end ">
               <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-               <p id="main-balance" class="font-medium text-zinc-500 mx-2">5500</p>
+               <p id="main-balance" class="font-medium text-zinc-500 mx-2">2000000</p>
                <p class="font-medium text-zinc-500">BDT</p>
             </div>
           </div>
@@ -41,14 +41,14 @@
     </header>
 
 
-    <main class="mt-24 flex justify-center gap-2 flex-col">
-        <div class="flex flex-row justify-center gap-14">
+    <main class="mt-24 flex justify-center gap-2 flex-col ">
+        <div class="flex flex-row justify-center gap-14 sticky top-16 z-50 bg-base-100   py-4">
             <button id="donation-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">Donation</button>
             <button id="history-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">History</button>
     
         </div>
 
-   <!-- Open the modal using ID.showModal() method -->
+
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box flex flex-col gap-4 ">
     <h1 class="font-bold text-3xl flex justify-center">Congrates!</h1>
@@ -58,8 +58,7 @@
      <div class="btn modal-action mx-auto flex justify-center w-1/3 ">
 
         <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close Confirmation</button>
+            <button class="btn">Close Confirmation</button>
       </form>
     </div>
   </div>
@@ -154,6 +153,13 @@
                   </div>
                 </div>
               </div>
+        </div>
+
+
+        <div id="history-inbox" class="hidden">
+
+          <h1>Transactions</h1>
+
         </div>
     </main>
     

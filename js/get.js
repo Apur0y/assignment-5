@@ -13,7 +13,7 @@ function getTextFieldValueId(id){
 }
 
 
-function jusTry(buttonId,amount,collection,avaiableTk){
+function jusTry(buttonId,amount,collection,avaiableTk,sector){
 
     document.getElementById(buttonId).addEventListener('click',function(event){
 
@@ -33,6 +33,13 @@ function jusTry(buttonId,amount,collection,avaiableTk){
             alert('Invalid input')
             return;
         }
+
+        const div = document.createElement('div')
+div.classList.add('bg-yellow-300')
+div.innerHTML =` 
+         <h1>${donateTk} Taka is Donated for ${sector}, Bangladesh. </h1>
+`
+document.getElementById('history-inbox').appendChild(div)
 
         const newBalance= mainBalance- donateTk;
         document.getElementById(avaiableTk).innerText = newBalance
