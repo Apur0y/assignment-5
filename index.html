@@ -22,7 +22,7 @@
 
         <div class="navbar mx-auto px-24 pt-4">
             <div class="navbar-start">
-            <button class="bg-lime-300 py-2 px-4 font-semibold rounded-lg">Blog</button>
+            <button onclick="window.location.href='blog.html'" id="blog-btn" class="bg-lime-300 py-2 px-4 font-semibold rounded-lg">Blog</button>
             </div>
 
             <div class="navbar-center">
@@ -40,13 +40,14 @@
        
     </header>
 
+    <div class="flex flex-row justify-center gap-14 sticky top-16 z-50 bg-base-100   py-4">
+      <button id="donation-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">Donation</button>
+      <button id="history-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">History</button>
 
-    <main class="mt-24 flex justify-center gap-2 flex-col ">
-        <div class="flex flex-row justify-center gap-14 sticky top-16 z-50 bg-base-100   py-4">
-            <button id="donation-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">Donation</button>
-            <button id="history-btn" class="btn btn-lg hover:bg-lime-300 border-gray-200">History</button>
+  </div>
+
+    <main id="donation-section" class="mt-24 flex justify-center gap-2 flex-col ">
     
-        </div>
 
 
 <dialog id="my_modal_1" class="modal">
@@ -156,12 +157,16 @@
         </div>
 
 
-        <div id="history-inbox" class="hidden">
-
-          <h1>Transactions</h1>
-
-        </div>
+       
     </main>
+
+    <div id="history-inbox" class="hidden">
+
+      <h1 class="">Transactions</h1>
+
+    
+
+    </div>
     
 
 

@@ -1,1 +1,95 @@
- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <header>
+        <!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .lexend{
+        font-family: "Lexend", sans-serif;
+    }
+</style>
+<body class="lexend relative">
+    
+    <header class="sticky top-0 z-50 bg-orange-100 shadow-md px-14" >
+
+        <div class="navbar mx-auto px-24 pt-4">
+            <div class="navbar-start">
+            <button onclick="window.history.back()" id="home-btn" class="bg-lime-300 py-2 px-4 font-semibold rounded-lg" >Home</button>
+            </div>
+
+            <div class="navbar-center">
+                <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/logo.png" alt="">
+              <a class="btn btn-ghost ">Donate Bangladesh</a>
+            </div>
+
+
+            <div class="navbar-end ">
+              <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
+               <p id="main-balance" class="font-medium text-zinc-500 mx-2">2000000</p>
+               <p class="font-medium text-zinc-500">BDT</p>
+            </div>
+          </div>
+       
+    </header>
+
+    <h1 class="font-extrabold text-4xl my-12">Important FAQ</h1>
+
+
+
+    <main>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model(DOM) is the programing interface where the HTML documents represents as a tree and every element of HTML is known as node </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>An element can be select from DOM in few ways :</p>
+              <p>1. Using "ID" : getElementById("ID")</p>
+              <p>2. Using "ClassName" : getElementById("ClassName")</p>
+              <p>3. Using "TagName" : getElementById("TagName")</p>
+              <p>4.To get single element : querySelector("elementIdentity") </p>
+              <p>5. To get multiple elements: querySelectorAll()</p>
+              
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegaltion in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation in HTML is a technique that allows you to handle events on multiple elements using a single event listener on a common ancestor.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>1. You can change the attributes of an element using the setAttribute method or directly by accessing the attribute.</p>
+              <p>2. To change the styles of an element, you can use the style property.</p>
+              <p>3. You can add or remove classes using the classList property.</p>
+            </div>
+          </div>
+    </main>
+ </body>
+ </html>

@@ -37,7 +37,7 @@ function jusTry(buttonId,amount,collection,avaiableTk,sector){
         const div = document.createElement('div')
 div.classList.add('bg-yellow-300')
 div.innerHTML =` 
-         <h1>${donateTk} Taka is Donated for ${sector}, Bangladesh. </h1>
+         <h1 class="p-7 border-gray-100 rounded-lg">${donateTk} Taka is Donated for ${sector}, Bangladesh. </h1>
 `
 document.getElementById('history-inbox').appendChild(div)
 
