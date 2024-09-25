@@ -35,7 +35,7 @@ function jusTry(buttonId,amount,collection,avaiableTk,sector){
 
         }
 
-        if(isNaN(donateTk) || donateTk<0 ){
+        if(isNaN(donateTk) || donateTk<=0 ){
             alert('Invalid input')
             return;
         }
